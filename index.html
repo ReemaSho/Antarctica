@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Antarctica</title>
+</head>
+
+<body>
+    <!-- ------------start navbar---------- -->
+
+    <nav class="navbar">
+        <div id="logo-div" class="phlogo""><a href=" #">
+            <img class="logo" src="https://cdn.freebiesupply.com/logos/large/2x/antarctica-2-logo-black-and-white.png"
+                alt="logo">
+
+            </a>
+        </div>
+        <ul class="nav-list" id="navi-list">
+            <a href="#ice">
+                <li class="list-item"> Ice</li>
+            </a>
+            <a href="#animals">
+                <li class="list-item"> Animal kingdom</li>
+            </a>
+            <a href="#History">
+                <li class="list-item"> History</li>
+            </a>
+            <a href="#lakes">
+                <li class="list-item">Subglacial lakes</li>
+            </a>
+            <a href="#Highlights">
+                <li class="list-item"> Highlights</li>
+            </a>
+        </ul>
+        <div class="menu" id="togglebutton">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+
+    </nav>
+    <!-- -----------end navbar--------------------->
+
+    <!-- <div class="header head-fontsize">
+        <p> <span>Anta</span>planet </p>
+    </div> -->
+    <!-- ---------------------------intro to Antarctica------------ -->
+
+    <div class="z-order intro-section">
+
+        <h1 class="antarctica head-fontsize"> Antarctica
+        </h1>
+        <img class="decor-img"
+            src="https://global.hurtigruten.com/globalassets/photos/destinations/antarctica/2500x1250_tenderboat-wilhelmina-bay-antarctica-hgr-118181--photo_karsten_bidstrup.jpg?width=1600&height=630&transform=DownFill"
+            alt="">
+
+        <p class="head-fontsize">
+            No place on Earth compares to this vast white wilderness of elemental forces: snow, ice, water, rock.
+            Antarctica is simply stunning.
+        </p>
+    </div>
+    <!-- ----------------------end intro to Antarctica-------------- -->
+
+    <!-- ------------------ introduction of the quiz section ---------  -->
+    <main class="quiz-section z-order ">
+
+
+
+        <h2 class="quiz-intro text-fontsize" id="wel">The unkown continent!</h2>
+        <p class="quiz-intro text-fontsize">How much do you know about Antarctica? Take the quiz and you'll know
+            right away if you're an Antarctic expert.
+
+        </p>
+
+
+        <div class="mainbutton quiz-intro">
+
+            <button onclick="document.getElementById('quiz-list').style.display='block'"
+                class="quiz-intro text-fontsize" id="quiz-button">START</button>
+        </div>
+
+    </main>
+    <!-- ------------------end introduction of the quiz section ---------  -->
+    <!-- ------------------------------quiz form------------------------ -->
+
+    <form id="quiz-list" name="quiz" class="quiz-form text-fontsize" onsubmit="return false">
+        <div class="questiondiv">
+            <div>
+                <p class="questions">1-What Big Is Antarctica?</p>
+                <p><input class="answers" type="radio" name="question1" value="a"> The size of Russia</p>
+                <p class="correct-answers"><input class=" answers" type="radio" name="question1" value="bgood1"> The
+                    size of the USA and Mexico</p>
+                <p><input class="answers" type="radio" name="question1" value="c"> The size of Australia</p>
+
+            </div>
+            <div>
+                <p class="questions">2-How Much Of Antarctica Is Covered By Ice?</p>
+                <p class="correct-answers"><input class=" answers" type="radio" name="question2" value="agood2"> 98%
+                </p>
+                <p><input class="answers" type="radio" name="question2" value="b"> 86%</p>
+                <p><input class="answers" type="radio" name="question2" value="c"> 77%</p>
+
+            </div>
+            <div>
+                <p class="questions">3-Which Of The Following Can't You Find In Antarctica?</p>
+                <p><input class="answers" type="radio" name="question3" value="a"> Rivers</p>
+                <p><input class="answers" type="radio" name="question3" value="b"> Deserts</p>
+                <pc class="correct-answers"><input class=" answers" type="radio" name="question3" value="cgood3">
+                    Trees
+                    </p>
+
+            </div>
+            <div>
+                <p class="questions">4-Which Of These Animals Can You Find There?</p>
+                <p><input class="answers" type="radio" name="question4" value="a"> Polar bears</p>
+                <p class="correct-answers"><input class=" answers" type="radio" name="question4" value="bgood4">
+                    Seals
+                </p>
+                <p><input class="answers" type="radio" name="question4" value="c"> Wolves</p>
+
+            </div>
+            <div>
+                <p class="questions">5-Who Was The First Person to Reach The South Pole In 1911?</p>
+                <p><input class="answers" type="radio" name="question5" value="a"> Richard Byrd (American)</p>
+                <p><input class="answers" type="radio" name="question5" value="b"> Robert Scott (britich)</p>
+                <p class="correct-answers"><input class=" answers" type="radio" name="question5" value="cgood5">
+                    Roald
+                    Amundsen (Norwegian)</p>
+
+            </div>
+            <div id="result" class="position-btns text-fontsize"></div>
+            <div class="position-btns">
+                <input id="donebtn" class="stylebtn" type="button" name="checkbtn" value="submit" onclick="check() ">
+            </div>
+            <div class="position-btns text-fontsize">
+                <input id="closebtn" class="stylebtn" type="submit" name="close" value="close" onclick=" cancel() ">
+            </div>
+
+        </div>
+
+    </form>
+    <!-- ----------------------------------end quiz form---------------------- -->
+    <div class="arrow-up"> <a href="#logo-div"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a></div>
+    <div class="space">
+
+    </div>
+    <!-- ---------------------------floated images section------------- -->
+    <div class="container z-order">
+        <h4 id="ice" class="title head-fontsize">Ice</h4>
+        <p class="text-fontsize">
+            Antarctica is about 98 percent covered in ice. There's 30 million cubic kilometers of ice, or 90 percent of
+            all
+            the ice on our planet. Even more superlatives: in Antarctica you will find 70 percent of all fresh water
+            (frozen admittedly) of the world. The Antarctic ice is the oldest ice in the world, older than the eternal
+            snow in the Himalayas, older than the ice sheet at the North Pole, older than the glaciers in the Alps.
+            <img class="right decor-img" src="https://th.bing.com/th/id/OIP.0XUZ9GO2OXFZHlKB94EBCgHaE8?pid=ImgDet&rs=1"
+                alt="">About 95 percent of the ice in Antarctica is glacial ice. This ice was created because the snow
+            is compressed more strongly year after year. Because there are almost no air bubbles left in it, the ice
+            often has a blue or green appearance. The huge ice mass that accumulates on the Antarctic continent must
+            also undergo the law of gravity. The ice slides to the lower coast. This creates glaciers- a kind of ice
+            rivers.
+
+            But that sliding doesn't go so smoothly. Slipping down a slope is only possible if there is a thin layer of
+            water under the glacier. If it's too cold, the glacier just gets stuck. So the ice doesn't all slide down as
+            quickly. This creates fissures in the glacial ice that can be up to tens of meters wide. Often those
+            fissures are covered with a thin layer of snow. Many polar explorers were killed by unsuspectingly stepping
+            on it and falling into the immeasurable depths. Large glacier crevices can only be crossed via an unstable
+            snow bridge that connects both sides. Antarctica is home to the longest glacier in the world: the Lambert
+            Glacier, which is 250 miles long.
+
+            When the glaciers reach the coast, they form ice cliffs or ice shelves. The ice shelves, because the ice
+            rubs over the seabed, are deformed at the bottom into protrusions and wrinkles that hold the ice shelf in
+            place. The most famous ice shelf is the Ross Ice Shelf. It is also the largest, about the same size as
+            France. At the place where the plateau hits the land it is 900 meters thick, at the front 200 meters. Other
+            large ice shelves include the Amery Ice Shelf, the Filchner Shelf and the Ronne Ice Shelf
+
+
+
+        </p>
+
+    </div>
+    <div class="space"></div>
+
+    <div class="container z-order">
+        <h4 id="animals" class="title head-fontsize">Animal kingdom</h4>
+        <p class="text-fontsize">
+            Preserved by the Antarctic Treaty, Antarctica is home to some of the world’s most extraordinary species.
+            <img class="left decor-img" src="https://www.antarcticaguide.com/storage/app/media//antarctica-penguins.jpg"
+                alt="">
+            With the view of several hundred scientists, Antarctica is uninhabited. Yet it is teeming with life,
+            especially along the coasts of the continent. Antarctica is home to eight penguin species. Countless seals
+            laze on ice floes. Whales come to stuff their voluminous bellies with krill. Millions of birds let
+            themselves be swept away by the indomitable wind. The most invisible are the fish, which amazingly do not
+            freeze in the icy Antarctic waters.
+            Seals unwittingly played a major role in the discovery of Antarctica. Robben hunters discovered quite a bit
+            of land during their poaching trips. But the discovery of these new areas was almost accompanied by the
+            extinction of some seal species.
+
+            Today, the seals are protected by the Convention for the Conservation of Antarctic Seals. Only a limited
+            number of seals may be caught for scientific research
+
+        </p>
+
+    </div>
+
+    <div class="space"></div>
+    <div class="container z-order">
+        <h4 id="History" class="title head-fontsize">History</h4>
+
+
+        <p class="text-fontsize">For a long time, Antarctica was hiding. It wasn't until the 19th century that human
+            eyes first saw it. That
+            made Antarctica the last continent discovered.<img class="right decor-img "
+                src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2020/05/gettyimages-517203600.jpg"
+                alt=""> It was not until 1911 that the heart of Antarctica, the
+            geographical south pole, was reached. The discovery of Antarctica is one of heroic stories. The first
+            explorers sailed their sailboats among the life-threatening ice floes. In the early 20th century, bold
+            men
+            trekked through the white desert on foot or with a sled. Many lost their lives or were maimed because a
+            limb
+            froze off it. But all polar explorers gave the world exciting adventure stories.
+            The names of explorers and their sovereigns and benefactors are written on Antarctica’s shores. Renowned
+            explorers from Cook to Amundsen and Scott all tried to penetrate this vast, mysterious land: each with
+            varying degrees of success. Visitors can follow in their footsteps and imagine what it was like to forge
+            through the pack ice on a creaking wooden boat or to haul sledges across the polar plateau. Some of the
+            historic huts actually remain, preserved frozen in rime ice, to tell the story of adventures long past.</p>
+
+    </div>
+    <div class="quotation z-order">
+        <p class="text-fontsize">“Give me Scott for scientific method, Amundsen for speed and efficiency, but when
+            disaster strikes and all
+            hope is gone, get down on your knees and pray for Shackleton.”</p>
+
+    </div>
+    <!-- -----------------------end floated images section----------------- -->
+    <div class="space"></div>
+    <!-- ---------------------- lake section-------------------  -->
+
+    <h4 id="lakes" class="title head-fontsize z-order">Subglacial lakes</h4>
+    <div class="first-column text-fontsize">You may be surprised, but there are also lakes in Antarctica. However,
+        some are not so easy to find.
+        They are located deep under the thick ice sheet. About 145 have been inventoried. Most are located in East
+        Antarctica.
+
+        The largest of the Antarctic subglacial lakes is Lake Vostok, which lies almost four kilometres below
+        the
+        ice sheet.
+        Other well-known lakes include Lake Ellsworth and Lake Whillans, both in West Antarctica. In
+        2012
+        Russia managed to drill all the way to Lake Vostok. In 2013, U.S. scientists reached the waters of Lake
+        Whillans. Britain began drilling for Lake Ellsworth in 2012, but due to technical problems, the project
+        has
+        been temporarily halted.</div>
+    <div class="lake-container z-order">
+
+        <div class="lake-text1 text-fontsize">
+            Scientists are particularly interested in these lakes under the ice sheet. The water is cut off from the
+            outside world for a very long time (in the case of Lake Vostok for more than 20 million years).Scientists
+            hope to find new life forms that give us a glimpse back in time. And if life were to be found in the
+            lakes,
+            it means that life could exist in much more extreme places than was thought possible until now,
+            including on
+            other planets.In 2013, British scientists already found traces of life in Lake Hodgson (Antarctic
+            Peninsula). In the
+            sediments at the bottom they found microbes.</div>
+        <div class="lake-image">
+            <img class="decor-img"
+                src="https://d3bkbkx82g74b8.cloudfront.net/eyJidWNrZXQiOiJsYWJyb290cy1hc3NldHMiLCJrZXkiOiJfcHVibGljXC9fZmlsZXNcL3N5c3RlbVwvY2tcL3RyZW5kaW5nXC9mcnl4ZWxsc2VlLTU1MzAyOF85NjBfNzIwX2ZlYTM0MTZmOWVjZjAxZTRmMmU3OGY1Mzg0Y2EzZDhjLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzAwLCJmaXQiOiJjb3ZlciJ9fX0="
+                alt="">
+            <!-- <img src="https://media.cntraveler.com/photos/5720de19a1d0c8fd663d398c/16:9/w_2560%2Cc_limit/iceberg-antarctica-penguins-GettyImages-126249208.jpg" alt=""> -->
+
+        </div>
+
+        <div class="lake-text2 text-fontsize">
+
+
+            In the upper layers, they discovered living microbes. At
+            greater depths (3.2 meters deep), they found remnants of microbes that lived there about 100,000 years
+            ago.
+            And that in particularly extreme circumstances. The lake has been covered in ice for at least 100,000
+            years.
+            All this time, these microbes have had no contact with the outside world and lived in the dark.
+
+            Microorganisms are also teeming in Lake Whillans, as became known in August 2014. In the water samples
+            examined, scientists found mainly single-celled organisms called Archaea.</div>
+
+    </div>
+    <!-- -------------------------end lake section-------------------  -->
+    <div class="space"></div>
+    <!-- ----------------------------------highlights section----------------------- -->
+
+    <h4 id="Highlights" class="title head-fontsize z-order">Highlights</h4>
+    <p class="text-fontsize Highlights-intro z-order">
+        Antarctica possesses an unnameable quality. Call it inspiration, call it grandeur…it is simply the indescribable
+        feeling of being a small speck in a vast, harshly beautiful land. A land where striated ice towers float among
+        geometric pancake ice, literally untouched mountains rear from marine mist, and wildlife lives, year in and year
+        out, to its own rhythms, quite apart from human concerns. To let our minds soar in a place nearly free of
+        humankind’s imprint: this is magic</p>
+    <!-- -----------cards section--------- -->
+
+    <div class="wraper z-order">
+        <div class="box decor-img  z-order">
+            <!-- ----- this div for the width------ -->
+            <div class="card1"></div>
+            <!--  --------this is the main background in order to give it plur filter  z-order 6---- -->
+            <p class="card-text text-fontsize">When you first lay eyes on these ever-anthropomorphized birds, you’ll
+                know you’ve
+                arrived in the
+                Antarctic. From the tiny tuxedo-clad Adélie and the bushy-browed macaroni, to the world’s largest
+                penguin, the
+                fabulously debonair emperor, the Antarctic offers a chance to see these unique creatures on their own
+                turf: sea,
+                ice and shore. Spot them shooting out of the water, tobogganing along the ice, or in cacophonous
+                rookeries that
+                are a sight to behold: squawking, gamboling birds, hatching, molting, and caring for their young
+            </p> <!--  ---this is for the text  z-order 5---- -->
+            <div id="card1bg" class="card-cover"></div> <!-- ----------this is the cover background  z-order4----- -->
+            <div class="card-title"></div>
+            <!-----------this is the title background in order to give it opacity z-order3-->
+            <p class="title-text head-fontsize">Meet The Penguins</p>
+            <!------------------this is the title z-order2-->
+        </div>
+
+
+
+        <div class="box decor-img z-order">
+            <div class="card2"></div>
+            <p class="card-text text-fontsize">The pragmatic whalers who worked in the waters of the Antarctic Peninsula
+                at the
+                beginning of the 20th century
+                were hardly sentimental. Yet they named this harbor Paradise , obviously quite taken with the
+                stunning icebergs and reflections of the surrounding mountains. Gentoos and shags call the area home,
+                with the
+                penguins nesting in the remains of Argentina's Brown Station. A climb up the hill here offers
+                magnificent
+                glacier views. If you’re lucky, perhaps you’ll even see one calving.</p>
+            <div id="card2bg" class="card-cover"></div>
+            <div class="card-title"></div>
+            <P class="title-text head-fontsize">Paradise Harbor</P>
+
+        </div>
+        <div class="box decor-img z-order">
+            <div class="card3"></div>
+            <p class="card-text text-fontsize">Deceptive in more ways than one, with its secret harbor, slopes of
+                ash-covered snow,
+                and hidden chinstrap
+                penguin rookery at Baily Head, Deception Island offers the rare
+                opportunity to sail inside a volcano. Now classified as having ‘a significant volcanic risk,’ Deception
+                remains a favorite for the industrial archaeology of its abandoned whaling station, half-destroyed by an
+                eruption-induced mudflow and flood. Some will stop for a quick dip in the island’s heated geothermal
+                currents.</p>
+            <div id="card3bg" class="card-cover"></div>
+            <div class="card-title"></div>
+            <P class="title-text head-fontsize">Deception Island</P>
+        </div>
+        <div class="box decor-img z-order">
+            <div class="card4"></div>
+            <p class="card-text text-fontsize">One of the major pay-offs of the long passage across the Southern Ocean
+                is the chance
+                to spot migrating
+                whales circulating through
+                krill-rich waters. Once nearer to land calling it whale-watching , if you’re in a Zodiac, doesn’t do it
+                justice: you could be close enough to get a ‘whale bath.' The whale exhales with a startlingly loud
+                ‘fffffffffffffff!’ right next to your boat, leaving you bathed in fish-scented mist. Near the ice edge,
+                look for orcas hunting in pods.</p>
+            <div id="card4bg" class="card-cover"></div>
+            <div class="card-title"></div>
+            <p class="title-text head-fontsize">Whale Encounter</p>
+
+
+
+        </div>
+    </div>
+    <!-- ----------------------------------end highlights section----------------------- -->
+    <div class="space"></div>
+    <!-- ----------------------------creativity section-------------------- -->
+    <section class="decor-img seals z-order">
+
+        <div class="bubbels">
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652_960_720.png" alt="bubbles">
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652_960_720.png" alt="bubbles">
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652_960_720.png" alt="bubbles">
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652_960_720.png" alt="bubbles">
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652_960_720.png" alt="bubbles">
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652_960_720.png" alt="bubbles">
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652_960_720.png" alt="bubbles">
+
+        </div>
+
+
+    </section>
+    <div class="space"></div>
+    <footer>
+        <Div class="footer-columns text-fontsize">
+            <p> <a href="#"><i class="contact fa fa-instagram" aria-hidden="true"></i></a> </p>
+            <a href="#"><i class="contact fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="contact fa fa-facebook-square" aria-hidden="true"></i></a>
+        </Div>
+        <p class="footer-columns text-fontsize">Powered by Reema Alshohof&copy;2021</p>
+        <p class="footer-columns text-fontsize"> <a
+                href="mailto:reemaalshohof88@gmail.com?subject=feedback&body=Message">Send feedback </a></p>
+    </footer>
+    <!-- -------------------------------------end creativity section------------------------ -->
+    <script src="js/javascriptfunctions.js"></script>
+</body>
+
+</html>
