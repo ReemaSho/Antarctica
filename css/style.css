@@ -14,12 +14,13 @@
   height: 100px;
   position: relative;
   z-index: -9;
+  clear: both;
 }
 .z-order{
   z-index: -9;
   position: relative;
 }
-.decor-img{
+.border{
   border: 2px solid#fff;      
   box-shadow:0 15px 40px rgba(0,0,0,.3);    
 }
@@ -252,10 +253,11 @@ justify-content: center;
 /* ----------------------------------start floated images section------------- */
  .container {
    width: 90%;
-   margin:0 5% ;
+   margin:5% ;
    position: relative;
    padding:2rem ;
   
+   /* margin-top: 10%; */
  
    
  }
@@ -365,7 +367,79 @@ width: 35%;
   /* text-shadow:1px 1px blue; */
   
 }
-  
+   /* -----bubbles section---- */
+   .seals{
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    background-image: url(https://i.pinimg.com/originals/85/e3/61/85e36199d277f494c85931c3e82b9654.jpg);
+     background-size:cover ;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;
+    /* clear: both; */
+    }
+    .bubbels{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+                                 
+                                   
+    }
+    .bubbels img{
+     width: 50px;
+     animation: bubbles-animi 7s infinite;
+     animation-timing-function: linear;
+    }
+                               
+    @keyframes bubbles-animi{
+     0% {
+     transform: translateY(20vh);
+     opacity: 1;
+     }
+                               
+    100% {
+    transform: translateY(-80vh);
+     opacity: 0;
+    }
+    }
+                               
+    .bubbels img:nth-child(1){
+     animation-delay: .2s;
+    width: 22px;
+     }
+    .bubbels img:nth-child(2){
+    animation-delay: 1s;
+      width: 70px;
+     }
+                               
+     .bubbels img:nth-child(3){
+     animation-delay: .2s;
+     width: 22px;
+     }
+                               
+    .bubbels img:nth-child(4){
+      animation-delay: .3s;
+     width: 50px;
+     }
+                               
+    .bubbels img:nth-child(5){
+      animation-delay: 1.5s;
+     width: 30px;
+      }                         
+     .bubbels img:nth-child(6){
+     animation-delay: 1.3s;
+     width: 15px;
+    }
+    .bubbels img:nth-child(7){
+     animation-delay: 2s;
+     width: 60px;
+     }
+ /* ---------------bubbles section-------------- */  
 
 .wraper{
  /* position: relative; */
@@ -375,12 +449,10 @@ width: 35%;
  }        
 .wraper .box{
  position: relative;
- /* width: 21%; */
  height: 80%;
 width: 40%;
 margin: 5%;
 float: left;
- /* margin: 2%; */
  overflow: hidden;
 border-radius: 10px;
                
@@ -484,79 +556,7 @@ padding: 5%;
       /* - ----------------------------------highlights section----------------------- -- */
 
 
-   /* --------------------start creativity section------------------------ */
-.seals{
-  height: 50vh;
-  width: 90%;
-  margin: auto;
-  background-image: url(https://i.pinimg.com/originals/85/e3/61/85e36199d277f494c85931c3e82b9654.jpg);
-   background-size:cover ;
-  background-position: center;
-  overflow: hidden;
-  position: relative;
-  z-index: -10;
-  /* clear: both; */
-  }
-  .bubbels{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-                               
-                                 
-  }
-  .bubbels img{
-   width: 50px;
-   animation: bubbles-animi 7s infinite;
-   animation-timing-function: linear;
-  }
-                             
-  @keyframes bubbles-animi{
-   0% {
-   transform: translateY(20vh);
-   opacity: 1;
-   }
-                             
-  100% {
-  transform: translateY(-80vh);
-   opacity: 0;
-  }
-  }
-                             
-  .bubbels img:nth-child(1){
-   animation-delay: .2s;
-  width: 22px;
-   }
-  .bubbels img:nth-child(2){
-  animation-delay: 1s;
-    width: 70px;
-   }
-                             
-   .bubbels img:nth-child(3){
-   animation-delay: .2s;
-   width: 22px;
-   }
-                             
-  .bubbels img:nth-child(4){
-    animation-delay: .3s;
-   width: 50px;
-   }
-                             
-  .bubbels img:nth-child(5){
-    animation-delay: 1.5s;
-   width: 30px;
-    }                         
-   .bubbels img:nth-child(6){
-   animation-delay: 1.3s;
-   width: 15px;
-  }
-  .bubbels img:nth-child(7){
-   animation-delay: 2s;
-   width: 60px;
-   }
-        /* -----------------end creativity section-------------- */
+
         /* -------------------start footer---------------- */
  
  footer{
@@ -565,7 +565,6 @@ padding: 5%;
   flex-direction: column; 
   justify-content: center;
   align-items: center;
-  padding: 5%; 
   text-transform: uppercase;
  }
  .footer-columns{
@@ -593,7 +592,7 @@ color: azure;
  }
  
  
- 
+ /* -----------------------------------end----------------------------------- */
  
  
  
@@ -613,7 +612,7 @@ color: azure;
  
 
 
-
+                 /* -------------------------------media quiries------------------- */
 
   @media (max-width: 768px){
     .head-fontsize{
@@ -675,6 +674,11 @@ color: azure;
       font-size: 0.9rem;
     } 
   }
+
+
+
+
+
   @media all and (max-width: 499px) {
     .head-fontsize{
       font-size: 1.2rem;
