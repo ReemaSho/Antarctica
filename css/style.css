@@ -522,7 +522,7 @@ padding: 5%;
 }
 
 
-.wraper .box:hover .card-cover, .wraper .box:active .card-cover {
+.wraper .box:hover .card-cover {
   height: 10%;
   opacity: 0;
   
