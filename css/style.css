@@ -555,7 +555,9 @@ padding: 5%;
         text-align: center;
         padding: 20% 0;
       }
-
+@media(hover:hover){
+  cursor: pointer;
+}
 
         /* -------------------start footer---------------- */
  
@@ -843,7 +845,5 @@ color: azure;
       width: 20px;
     }
     /* ---------------------- end-------------------- */ 
-    .card-cover{
-      cursor: pointer;
-    }
+    
   }

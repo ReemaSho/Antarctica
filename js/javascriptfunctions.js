@@ -100,3 +100,4 @@ function cancel() {
         resetbtn[x].checked = false;
     }                                                     // in order to reset the inputs
 }
+
