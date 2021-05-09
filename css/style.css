@@ -843,5 +843,12 @@ color: azure;
       width: 20px;
     }
     /* ---------------------- end-------------------- */ 
+    .card-text{
+      /* color: #5e60ce; */
+      font-weight: 700;
+    }
+    .card1 , .card2, .card3 , .card4{
+      filter: blur(0px);
+    }
     .card-cover{display: none;}
   }
