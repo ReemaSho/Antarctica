@@ -843,7 +843,7 @@ color: azure;
       width: 20px;
     }
     /* ---------------------- end-------------------- */ 
-    .box{
+    .card-cover{
       cursor: pointer;
     }
   }
