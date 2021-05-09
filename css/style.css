@@ -522,7 +522,7 @@ padding: 5%;
 }
 
 
-.wraper .box:hover .card-cover, .wraper .box:focus .card-cover {
+.wraper .box:hover .card-cover {
   height: 10%;
   opacity: 0;
   
@@ -843,4 +843,7 @@ color: azure;
       width: 20px;
     }
     /* ---------------------- end-------------------- */ 
+    .box{
+      cursor: pointer;
+    }
   }
