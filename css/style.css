@@ -555,8 +555,10 @@ padding: 5%;
         text-align: center;
         padding: 20% 0;
       }
-@media(hover:hover){
-  cursor: pointer;
+@media (:hover){
+  .wraper .box:focus .card-cover{
+    display: none;
+  }
 }
 
         /* -------------------start footer---------------- */
