@@ -555,11 +555,7 @@ padding: 5%;
         text-align: center;
         padding: 20% 0;
       }
-@media (hover){
-  .wraper .box:focus .card-cover{
-    display: none;
-  }
-}
+
 
         /* -------------------start footer---------------- */
  
@@ -830,7 +826,7 @@ color: azure;
     margin: 10%;
   }
   
-     /* ----------------------editing bubbles size & creativity section---------------- */
+     /* ----------------------editing bubbles size & bubbles section---------------- */
      .seals{
       background-image: url(https://th.bing.com/th/id/R82d924ddb3e3b24bf6187d674b31a91f?rik=iZlqKiVJfurRbw&riu=http%3a%2f%2fwww.nationalgeographic.com%2fcontent%2fdam%2fmagazine%2frights-exempt%2f2017%2f07%2fUnder-Antarctica%2funder-antarctica-weddell-seal-pup.ngsversion.1497363711119.adapt.1900.1.jpg&ehk=7SGOhc8QKXuSEISKBT1ku4d3g4ur9JaUQ%2b%2b6eMqSFbA%3d&risl=&pid=ImgRaw);
     }
@@ -847,5 +843,5 @@ color: azure;
       width: 20px;
     }
     /* ---------------------- end-------------------- */ 
-    
+    .card-cover{display: none;}
   }
