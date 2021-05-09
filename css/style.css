@@ -251,7 +251,8 @@ justify-content: center;
 }
 /* ----------------------------------start floated images section------------- */
  .container {
-   width: 100%;
+   width: 90%;
+   margin:0 5% ;
    position: relative;
    padding:2rem ;
   
@@ -556,6 +557,7 @@ padding: 5%;
    width: 60px;
    }
         /* -----------------end creativity section-------------- */
+        /* -------------------start footer---------------- */
  
  footer{
   color:#4361ee;
