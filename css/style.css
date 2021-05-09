@@ -555,7 +555,7 @@ padding: 5%;
         text-align: center;
         padding: 20% 0;
       }
-@media (:hover){
+@media (hover){
   .wraper .box:focus .card-cover{
     display: none;
   }
