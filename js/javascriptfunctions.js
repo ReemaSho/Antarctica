@@ -1,14 +1,14 @@
-// var name = prompt("what is your name?");
-// function ask() {
-//     // console.log(name);
-//     if (name === null) {
-//         document.getElementById("wel").innerHTML = "welcome to the unkown continent!";
-//     } else {
-//         document.getElementById("wel").innerHTML = "welcome " + name + " to the unkown continent!";
-//     }
-//     //  in irder not to appear "null " on the screen
-// }
-// ask();
+var name = prompt("what is your name?");
+function ask() {
+    // console.log(name);
+    if (name === null) {
+        document.getElementById("wel").innerHTML = "welcome to the unkown continent!";
+    } else {
+        document.getElementById("wel").innerHTML = "welcome " + name + " to the unkown continent!";
+    }
+    //  in irder not to appear "null " on the screen
+}
+ask();
 // ------------coding the hamburger menu----------
 const togglebutton = document.getElementById("togglebutton");
 const navilist = document.getElementById("navi-list");

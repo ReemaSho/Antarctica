@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');   /* ----this font for the quotation section--- */
 *{
     padding: 0;
     margin: 0;
@@ -35,7 +35,7 @@
     scroll-behavior:smooth;
   }
   body{
-    font-family: montserrat;
+    /* font-family: montserrat; */
     background: rgb(100,223,223);
     background: linear-gradient(180deg, rgba(100,223,223,1) 0%, rgba(255,255,255,1) 67%); 
     color:#4361ee;
@@ -360,6 +360,19 @@ width: 35%;
     z-index: -10;
     /* clear: both; */
     }
+    .bubbels-text{
+      position: absolute;
+      left: 0;
+      top: -400%;
+      width: 30%;
+      z-index: -9;
+      margin:1% 2%;
+      color: azure;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: "Libre Baskerville",Georgia,serif;
+      
+    }
     .bubbels{
     width: 100%;
     display: flex;
@@ -419,7 +432,7 @@ width: 35%;
      animation-delay: 2s;
      width: 60px;
      }
- /* ---------------bubbles section-------------- */  
+ /* --------------end-bubbles section-------------- */  
 
 .wraper{
  /* position: relative; */
@@ -518,7 +531,7 @@ display: flex;
 align-items: center;
 justify-content: start;
 padding: 5%;
-
+color: azure;
 }
 
 
@@ -829,6 +842,9 @@ color: azure;
      /* ----------------------editing bubbles size & bubbles section---------------- */
      .seals{
       background-image: url(https://th.bing.com/th/id/R82d924ddb3e3b24bf6187d674b31a91f?rik=iZlqKiVJfurRbw&riu=http%3a%2f%2fwww.nationalgeographic.com%2fcontent%2fdam%2fmagazine%2frights-exempt%2f2017%2f07%2fUnder-Antarctica%2funder-antarctica-weddell-seal-pup.ngsversion.1497363711119.adapt.1900.1.jpg&ehk=7SGOhc8QKXuSEISKBT1ku4d3g4ur9JaUQ%2b%2b6eMqSFbA%3d&risl=&pid=ImgRaw);
+    }
+    .bubbels-text{
+      top: -650%;
     }
      .bubbels img:nth-child(2){
       animation-delay: 1s;
