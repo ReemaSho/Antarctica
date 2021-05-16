@@ -356,9 +356,7 @@ width: 35%;
      background-size:cover ;
     background-position: center;
     overflow: hidden;
-    position: relative;
-    z-index: -10;
-    /* clear: both; */
+   
     }
     .bubbels-text{
       position: absolute;
