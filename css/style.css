@@ -254,10 +254,10 @@ justify-content: center;
  }
 
  .container p{
-  text-align: justify;
+  /* text-align: justify; */
 width: 90%;
 height: 100%;
-  /* line-height:1.5em; */
+  line-height:1.5em;
   overflow: hidden;
   margin: auto;
  
@@ -316,6 +316,8 @@ width: 35%;
    width: 90%;
    margin: auto;
    margin-bottom: 1%;
+   line-height:1.5em;
+
    
  }
 .lake-container{
@@ -325,10 +327,12 @@ width: 35%;
 .lake-text1{
   width: 25%;
   margin: 0% 2% 5% 5%;
+  line-height:1.5em;
 }
 .lake-text2{
   width: 25%;
   margin: 0% 5% 5% 2%;
+  line-height:1.5em;
 }
 .lake-image{
   width: 36%;
@@ -345,6 +349,7 @@ width: 35%;
 .Highlights-intro{
   margin: 5% 20%;
   font-style: italic;
+  line-height:1.5em;
   /* text-shadow:1px 1px blue; */
   
 }
