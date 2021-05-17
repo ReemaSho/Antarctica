@@ -35,12 +35,13 @@
     scroll-behavior:smooth;
   }
   body{
-    /* font-family: montserrat; */
+    font-family: sans-serif;
     background: rgb(100,223,223);
     background: linear-gradient(180deg, rgba(100,223,223,1) 0%, rgba(255,255,255,1) 67%); 
     color:#4361ee;
    position: relative;
    z-index: -6;
+   
 
   }
    /* --------------start navbar----------- */
